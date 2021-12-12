@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+:root {
+  --main-font: 'Fira Code', monospace;
+  --shadow-color: #2C2D2C;
+
+  --main-bg-colour: #0e121b;
+  --bg-colour-accent-light: #1e212a;
+  --bg-colour-accent-dark: #12151e;
+
+  --primary-font-colour: #4c2354;
+  --primary-colour: #c578db;
+
+
+  --secondary-colour: #79918B;
+  --accent-blue: #5a83a9;
+
+
+/*  Rose Pine Colours  */
+  --base:	    #191724;
+  --surface:	#1f1d2e;
+  --overlay:	#26233a;
+  --inactive: #555169;
+  --subtle:	  #6e6a86;
+  --text:	    #e0def4;
+  --love:	    #eb6f92;
+  --gold:	    #f6c177;
+  --rose:	    #ebbcba;
+  --pine:	    #31748f;
+  --foam:     #9ccfd8;
+  --iris:	    #c4a7e7;
+  --highlight:	#2a2837;
+  --highlightInactive:	#211f2d;
+  --highlightOverlay:	#3a384a;
+}
+
+*,*:after,*:before {
+    box-sizing: inherit;
+    font-family: var(--main-font);
+}
+
+html {
+ font-size: 16px;
+}
+body {
+
+  background-color: var(--base);
+  font-family: var(--main-font);
+  color: yellow;
+}
+
+.test {
+  background-color: #1e212a;
+}
+
+.test2 {
+  background-color: #12151e;
+}
+
+/* misc spacing */
+.section {
+  max-width: 40rem;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+}
+
+.section button {
+}
+
+.section.colours, .section.buttons {
+}
+
+.section.heading {
+  flex-direction : column;
+  text-align: center;
+
+}
+
+.colour {
+  border-radius: 4px;
+  height: 50px;
+  line-height: 50px;
+  width: 100px;
+  background-color: white;
+  color: var(--text);
+  display: inline-block;
+  margin: 10px 20px;
+  text-align: center;
+  font-family: var(--main-font);
+}
+
+.base {
+  background-color: var(--base);
+}
+
+.surface {
+  background-color: var(--surface);
+}
+
+.overlay {
+  background-color: var(--overlay);
+}
+
+.inactive {
+  background-color: var(--inactive);
+}
+
+.text {
+  background-color: var(--text);
+}
+
+.love {
+  background-color: var(--love);
+}
+
+.gold {
+  background-color: var(--gold);
+}
+
+.rose {
+  background-color: var(--rose);
+}
+
+
+.pine {
+  background-color: var(--pine);
+}
+
+.foam {
+  background-color: var(--foam);
+}
+
+.iris {
+  background-color: var(--iris);
+}
+
+.highlight {
+  background-color: var(--highlight);
+}
+
+.highlight-inactive {
+  background-color: var(--highlight-inactive);
+}
+
+.highlight-overlay {
+  background-color: var(--highlight-overlay);
+}
+
+
+/* Headings */
+
+h1,h2,h3,h4,h5,h6,p {
+    font-weight: 400;
+    letter-spacing: -.1rem;
+    margin-bottom: 2.0rem;
+    margin-top: 0;
+    font-family: var(--main-font);
+    color: var(--text);
+    diplay: block;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5;
+}
+h6 {
+  font-size: 1rem;
+}
+
+
+
+
+/* Buttons */
+button {
+  background-color: var(--overlay);
+  color: var(--text);
+  font-weight: 400;
+  border: none;
+  border-radius: .3rem;
+  font-family: var(--main-font);
+  padding: 0 2rem;
+  margin: 0.5rem 0.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+button.border {
+  border: 1px solid var(--text);
+}
+
+button.secondary {
+  background-color: var(--pine);
+}
+
+button.secondary:hover {
+  background-color: var(--foam);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--highlight);
+}
+
+/* Forms */
+
+form {
+  display: block;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input[type='checkbox'], input[type='radio'] {
+    display: inline;
+}
+
+input, textarea, select {
+    color: var(--text);
+    background-color: transparent;
+    border: 0.1rem solid var(--text);
+    border-radius: 0.4rem;
+    box-shadow: none;
+    box-sizing: inherit;
+    padding: 0.6rem 1rem 0.7rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+option {
+  color: var(--base);
+  height: 20px;
+}
+
+
+.card {
+  background-color: var(--overlay);
+  min-height: 2rem;
+  min-width: 4rem;
+  padding: 2rem;
+  border-radius: 0.3rem;
+}
