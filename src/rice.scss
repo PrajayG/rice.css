@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
+@import '_forms.scss';
+@import '_typography.scss';
+
+
 :root {
   --main-font: 'Fira Code', monospace;
   --shadow-color: #2C2D2C;
@@ -45,7 +49,7 @@ body {
 
   background-color: var(--base);
   font-family: var(--main-font);
-  color: yellow;
+  color: var(--text);
 }
 
 .test {
@@ -147,39 +151,6 @@ body {
 }
 
 
-/* Headings */
-
-h1,h2,h3,h4,h5,h6,p {
-    font-weight: 400;
-    letter-spacing: -.1rem;
-    margin-bottom: 2.0rem;
-    margin-top: 0;
-    font-family: var(--main-font);
-    color: var(--text);
-    diplay: block;
-}
-
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3rem;
-}
-h3 {
-  font-size: 2.5rem;
-}
-h4 {
-  font-size: 2rem;
-}
-h5 {
-  font-size: 1.5;
-}
-h6 {
-  font-size: 1rem;
-}
-
-
-
 
 /* Buttons */
 button {
@@ -217,43 +188,7 @@ button:hover {
   background-color: var(--highlight);
 }
 
-/* Forms */
 
-form {
-  display: block;
-}
-
-fieldset {
-  border-width: 0;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-label {
-    display: block;
-    margin-bottom: .5rem;
-}
-
-input[type='checkbox'], input[type='radio'] {
-    display: inline;
-}
-
-input, textarea, select {
-    color: var(--text);
-    background-color: transparent;
-    border: 0.1rem solid var(--text);
-    border-radius: 0.4rem;
-    box-shadow: none;
-    box-sizing: inherit;
-    padding: 0.6rem 1rem 0.7rem;
-    width: 100%;
-    margin-bottom: 1rem;
-}
-
-option {
-  color: var(--base);
-  height: 20px;
-}
 
 
 .card {

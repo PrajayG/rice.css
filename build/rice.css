@@ -1,35 +1,118 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+/* Forms */
+input,
+textarea,
+select {
+  color: var(--text);
+  background-color: transparent;
+  border: 0.1rem solid var(--text);
+  border-radius: 0.4rem;
+  box-shadow: none;
+  box-sizing: inherit;
+  padding: 0.6rem 1rem 0.7rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: block;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+option {
+  color: var(--base);
+  height: 20px;
+}
+
+/* Typography  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+  margin-top: 0;
+  font-family: var(--main-font);
+  color: var(--text);
+  display: block;
+}
+
+h1 {
+  font-size: 4.6rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
 :root {
-  --main-font: "Fira Code", monospace;
-  --shadow-color: #2c2d2c;
+  --main-font: 'Fira Code', monospace;
+  --shadow-color: #2C2D2C;
   --main-bg-colour: #0e121b;
   --bg-colour-accent-light: #1e212a;
   --bg-colour-accent-dark: #12151e;
   --primary-font-colour: #4c2354;
   --primary-colour: #c578db;
-  --secondary-colour: #79918b;
+  --secondary-colour: #79918B;
   --accent-blue: #5a83a9;
   /*  Rose Pine Colours  */
-  --base: #191724;
-  --surface: #1f1d2e;
-  --overlay: #26233a;
+  --base:	    #191724;
+  --surface:	#1f1d2e;
+  --overlay:	#26233a;
   --inactive: #555169;
-  --subtle: #6e6a86;
-  --text: #e0def4;
-  --love: #eb6f92;
-  --gold: #f6c177;
-  --rose: #ebbcba;
-  --pine: #31748f;
-  --foam: #9ccfd8;
-  --iris: #c4a7e7;
-  --highlight: #2a2837;
-  --highlightInactive: #211f2d;
-  --highlightOverlay: #3a384a;
+  --subtle:	  #6e6a86;
+  --text:	    #e0def4;
+  --love:	    #eb6f92;
+  --gold:	    #f6c177;
+  --rose:	    #ebbcba;
+  --pine:	    #31748f;
+  --foam:     #9ccfd8;
+  --iris:	    #c4a7e7;
+  --highlight:	#2a2837;
+  --highlightInactive:	#211f2d;
+  --highlightOverlay:	#3a384a;
 }
 
-*,
-*:after,
-*:before {
+*, *:after, *:before {
   box-sizing: inherit;
   font-family: var(--main-font);
 }
@@ -134,60 +217,19 @@ body {
   background-color: var(--highlight-overlay);
 }
 
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-weight: 400;
-  letter-spacing: -0.1rem;
-  margin-bottom: 2rem;
-  margin-top: 0;
-  font-family: var(--main-font);
-  color: var(--text);
-  diplay: block;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 2.5rem;
-}
-
-h4 {
-  font-size: 2rem;
-}
-
-h5 {
-  font-size: 1.5;
-}
-
-h6 {
-  font-size: 1rem;
-}
-
 /* Buttons */
 button {
   background-color: var(--overlay);
   color: var(--text);
   font-weight: 400;
   border: none;
-  border-radius: 0.3rem;
+  border-radius: .3rem;
   font-family: var(--main-font);
   padding: 0 2rem;
   margin: 0.5rem 0.5rem;
   height: 2rem;
   line-height: 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: .1rem;
   text-align: center;
   white-space: nowrap;
   display: inline-block;
@@ -209,46 +251,6 @@ button.secondary:hover {
 button:hover {
   cursor: pointer;
   background-color: var(--highlight);
-}
-
-/* Forms */
-form {
-  display: block;
-}
-
-fieldset {
-  border-width: 0;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline;
-}
-
-input,
-textarea,
-select {
-  color: var(--text);
-  background-color: transparent;
-  border: 0.1rem solid var(--text);
-  border-radius: 0.4rem;
-  box-shadow: none;
-  box-sizing: inherit;
-  padding: 0.6rem 1rem 0.7rem;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-option {
-  color: var(--base);
-  height: 20px;
 }
 
 .card {
