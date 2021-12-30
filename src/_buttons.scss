@@ -1,0 +1,44 @@
+
+
+/* Buttons */
+button {
+  background-color: var(--overlay);
+  color: var(--text);
+  font-weight: 400;
+  border: none;
+  border-radius: .3rem;
+  font-family: var(--main-font);
+  padding: 0 2rem;
+  margin: 0.5rem 0.5rem;
+  height: 2rem;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  box-sizing: border-box;
+
+  &.border {
+    border: 1px solid var(--text);
+  }
+
+  &.secondary {
+    background-color: var(--pine);
+  }
+
+  &.secondary:hover {
+    background-color: var(--foam);
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--highlight);
+  }
+
+}
+
+
+
+
+
+
