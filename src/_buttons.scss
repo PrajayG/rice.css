@@ -2,7 +2,7 @@
 
 /* Buttons */
 button {
-  background-color: var(--overlay);
+  background-color: var(--pine);
   color: var(--text);
   font-weight: 400;
   border: none;
@@ -17,24 +17,37 @@ button {
   white-space: nowrap;
   display: inline-block;
   box-sizing: border-box;
+  cursor: pointer;
 
   &.border {
     border: 1px solid var(--text);
   }
 
   &.secondary {
-    background-color: var(--pine);
+    background-color: var(--overlay);
   }
 
-  &.secondary:hover {
-    background-color: var(--foam);
+
+  // &.secondary:hover {
+  //   background-color: var(--highlight);
+  // }
+
+  // &:hover {
+
+  //   background-color: var(--foam);
+  // }
+
+  &.warning {
+    background-color: var(--love);
   }
 
-  &:hover {
-    cursor: pointer;
-    background-color: var(--highlight);
-  }
 
+}
+
+.section {
+  button.secondary {
+    background-color:var(--subtle);
+  }
 }
 
 
