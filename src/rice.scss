@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap');
-@import '_forms';
-@import '_typography';
-@import '_buttons';
+@import "_variables";
+@import "_buttons";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+@import "_forms";
+@import "_typography";
 
+@use "sass:color";
 
 :root {
-  --main-font: 'Fira Code', monospace;
-  --shadow-color: #2C2D2C;
+  --shadow-color: #2c2d2c;
 
   --main-bg-colour: #0e121b;
   --bg-colour-accent-light: #1e212a;
@@ -15,42 +16,26 @@
   --primary-font-colour: #4c2354;
   --primary-colour: #c578db;
 
-
-  --secondary-colour: #79918B;
+  --secondary-colour: #79918b;
   --accent-blue: #5a83a9;
 
-
-/*  Rose Pine Colours  */
-  --base:	    #191724;
-  --surface:	#1f1d2e;
-  --overlay:	#26233a;
-  --inactive: #555169;
-  --subtle:	  #6e6a86;
-  --text:	    #e0def4;
-  --love:	    #eb6f92;
-  --gold:	    #f6c177;
-  --rose:	    #ebbcba;
-  --pine:	    #31748f;
-  --foam:     #9ccfd8;
-  --iris:	    #c4a7e7;
-  --highlight:	#2a2837;
-  --highlight-inactive:	#211f2d;
-  --highlight-overlay:	#3a384a;
+  /*  Rose Pine Colours  */
 }
 
-*,*:after,*:before {
-    box-sizing: inherit;
-    font-family: var(--main-font);
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  font-family: $main-font;
 }
 
 html {
- font-size: 16px;
+  font-size: 16px;
 }
 body {
-
-  background-color: var(--surface);
-  font-family: var(--main-font);
-  color: var(--text);
+  background-color: $surface;
+  font-family: $main-font;
+  color: $text;
 }
 
 /* Misc Spacing */
@@ -61,19 +46,19 @@ body {
   margin: 2rem auto;
   display: block;
   justify-content: center;
-  background-color: var(--overlay);
+  background-color: $overlay;
 }
 
 .section button {
 }
 
-.section.colours, .section.buttons {
+.section.colours,
+.section.buttons {
 }
 
 .section.heading {
-  flex-direction : column;
+  flex-direction: column;
   text-align: center;
-
 }
 
 .colour {
@@ -82,75 +67,73 @@ body {
   height: 50px;
   line-height: 50px;
   padding: 0 1rem;
-  color: var(--text);
+  color: $text;
   display: inline-block;
   margin: 10px 20px;
   text-align: center;
-  font-family: var(--main-font);
+  font-family: $main-font;
 }
 
 .base {
-  background-color: var(--base);
+  background-color: $base;
 }
 
 .surface {
-  background-color: var(--surface);
+  background-color: $surface;
 }
 
 .overlay {
-  background-color: var(--overlay);
+  background-color: $overlay;
 }
 
 .inactive {
-  background-color: var(--inactive);
+  background-color: $inactive;
 }
 
 .text {
-  color: var(--text);
-  background-color: var(--overlay);
-  border: 1px solid var(--text);
+  color: $text;
+  background-color: $overlay;
+  border: 1px solid $text;
 }
 
 .love {
-  background-color: var(--love);
+  background-color: $love;
 }
 
 .gold {
-  background-color: var(--gold);
+  background-color: $gold;
 }
 
 .rose {
-  background-color: var(--rose);
+  background-color: $rose;
 }
 
-
 .pine {
-  background-color: var(--pine);
+  background-color: $pine;
 }
 
 .foam {
-  background-color: var(--foam);
+  background-color: $foam;
 }
 
 .iris {
-  background-color: var(--iris);
+  background-color: $iris;
 }
 
 .highlight {
-  background-color: var(--highlight);
+  background-color: $highlight;
 }
 
 .highlight-inactive {
-  background-color: var(--highlight-inactive);
+  background-color: $highlight-inactive;
 }
 
 .highlight-overlay {
-  background-color: var(--highlight-overlay);
+  background-color: $highlight-overlay;
 }
 
-
 .card {
-  background-color: var(--overlay);
+  background-color: $overlay;
   min-height: 2rem;
   min-width: 4rem;
   padding: 2rem;

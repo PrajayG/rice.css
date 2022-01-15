@@ -10,8 +10,8 @@ p {
   font-weight: 400;
   letter-spacing: -0.1rem;
   margin-top: 0;
-  font-family: var(--main-font);
-  color: var(--text);
+  font-family: $main-font;
+  color: $text;
   display: block;
 }
 
@@ -38,5 +38,3 @@ b,
 strong {
   font-weight: bold;
 }
-
-

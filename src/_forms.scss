@@ -1,17 +1,11 @@
 /* Forms */
 
-// TODO:
-  // Add focus states
-  // Ensure everything looks normal when next to each other.
-  //
-
-
 input,
 textarea,
 select {
-  color: var(--text);
+  color: $text;
   background-color: transparent;
-  border: 0.1rem solid var(--text);
+  border: 0.1rem solid $text;
   border-radius: 0.4rem;
   box-shadow: none;
   box-sizing: inherit;
@@ -41,6 +35,6 @@ input[type="radio"] {
 }
 
 option {
-  color: var(--base);
+  color: $base;
   height: 20px;
 }

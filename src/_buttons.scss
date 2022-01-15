@@ -1,18 +1,17 @@
-
-
 /* Buttons */
+
 button {
-  background-color: var(--pine);
-  color: var(--text);
+  background-color: $pine;
+  color: $text;
   font-weight: 400;
   border: none;
-  border-radius: .3rem;
-  font-family: var(--main-font);
+  border-radius: 0.3rem;
+  font-family: $main-font;
   padding: 0 2rem;
   margin: 0.5rem 0.5rem;
   height: 2rem;
   line-height: 2rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-align: center;
   white-space: nowrap;
   display: inline-block;
@@ -20,38 +19,24 @@ button {
   cursor: pointer;
 
   &.border {
-    border: 1px solid var(--text);
+    border: 1px solid $text;
+  }
+
+  &:hover {
+    background-color: $pine-dark;
   }
 
   &.secondary {
-    background-color: var(--overlay);
+    background-color: $overlay;
   }
-
-
-  // &.secondary:hover {
-  //   background-color: var(--highlight);
-  // }
-
-  // &:hover {
-
-  //   background-color: var(--foam);
-  // }
 
   &.warning {
-    background-color: var(--love);
+    background-color: $love;
   }
-
-
 }
 
 .section {
   button.secondary {
-    background-color:var(--subtle);
+    background-color: $subtle;
   }
 }
-
-
-
-
-
-
